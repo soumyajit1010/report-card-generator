@@ -6,15 +6,32 @@
 	height: 600px;
 }
 
+
+/*nav bar*/
+.navbar{
+  background-color: #00302c;
+  width: 100%;
+}
+
+.navbar-brand{
+  color: white;
+  margin-left: 20px;
+}
+
 .navbar-nav{
 	font-family: 'Lilita One', cursive;
 	text-align: center;
+  margin-right: 30px;
 }
 
 .brand-text{
 	font-family: 'Lilita One', cursive;
 	font-weight: bold;
 	font-size: 30px;
+}
+
+#title{
+  margin-top: -45px;
 }
 
 
@@ -26,7 +43,7 @@
 
 h1{
 	margin-bottom: 30px;
-	color: #fff;
+	color: #069A8E;
 	font-weight: bold;
 	font-family: sans-serif;
 }
@@ -44,102 +61,149 @@ h1{
 .row{
 	text-align: center;
 	margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
 }
+
+
 
 /*Features section*/
 #features{
 	margin-top: 100px;
+  background-color: #d7fffb;
+  padding: 20px;
+  padding-bottom: 30px;
 }
 .icons{
 	color: #069A8E;
 	font-size: 60px;
 }
 .icons:hover{
-	color: #A1E3D8;
+	color: #8ee5d7;
 }
 
 h3,p{
 	margin-top: 20px;
 	font-family: "Mochiy Pop One",sans-serif;
-	color: grey;
+	color: rgb(93, 93, 93);
 }
 
-/*Form section*/
+
+
+#sss{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+
+}
+
+/* Form Table */
 #std_input_table {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  max-width: 700px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
-  margin-top: 70px;
 }
-
-#std_input_table td, #std_input_table th {
-  border: 1px solid #ddd;
-  text-align: center;
-  font-weight: bold;
-  padding: 8px;
-}
-
-#std_input_table tr:nth-child(even){background-color: #A1E3D8;}
-
-#std_input_table tr:hover {background-color: #F7FF93;}
 
 #std_input_table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #069A8E;
+  background-color: #004842;
   color: white;
+  padding: 15px;
+  font-size: 22px;
 }
+
+#std_input_table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#std_input_table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Input Fields */
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
 button {
-  -webkit-border-radius: 7;
-  -moz-border-radius: 7;
-  border-radius: 7px;
-  text-shadow: 0px 0px 3px #666666;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 15px;
-  background: #3498db;
-  padding: 5px;
-  text-decoration: none;
+  background-color: #28a745;
+  color: white;
 }
 
 button:hover {
-  background: #24d44d;
-  text-decoration: none;
+  background-color: #218838;
 }
-select{
-	width: 95%;
-	text-align: center;
-	font-weight: bold;
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
 }
-input[type="text"],input[type="number"]{
-	width: 95%;
-	text-align: center;
-	font-weight: bold;
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
-input[type="submit"]{
-	color: #069A8E;
-	font-weight: bold;
-	padding: 8px;
-	border-radius: 5px;
-	border: 3px solid white;
+
+/* Download & Print Buttons */
+.download-buttons, .print-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
-input[type="submit"]:hover{
-	background-color: #F7FF93;
-	color: black;
-	border-radius: 20px;
+
+.download-buttons button, .print-buttons button {
+  width: 48%;
 }
+
+
+
 
 /*PDF TABLE*/
 .html_to_pdf{
-    border: 2px dotted; black;
+    border: 2px dotted black;
     padding: 2px 5px 5px 5px;
     background-color: #FFFBE7;
-    }
+}
 .school-title{
     /*background: #FFD93D;*/
     /*display: table;*/
     border: 5px solid #4D96FF;
-    color: #F55353;
+    color: #ff9898;
     font-size: 30px;
     font-family: sans-serif;
     font-weight: bold;
